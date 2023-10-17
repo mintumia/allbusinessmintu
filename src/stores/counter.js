@@ -7,6 +7,9 @@ export const useCounterStore = defineStore('counter', () => {
   function increment() {
     count.value++
   }
+  function multipyDouble() {
+    count.value *=2;
+  }
 
-  return { count, doubleCount, increment }
+  return { count, doubleCount, increment,multipyDouble }
 })
