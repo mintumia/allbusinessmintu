@@ -18,9 +18,9 @@ export const useCommonStore = defineStore('common', () => {
         lastName.value = _lastName;
     }
 
-    function setFromNet() {
+    async function setFromNet() {
 
-        axios.get("http://127.0.0.1:8000/api/test").then(response => {
+      await  axios.get("http://127.0.0.1:8000/api/test").then(response => {
 
              firstName.value = response.data.fname;
              lastName.value = response.data.lname;

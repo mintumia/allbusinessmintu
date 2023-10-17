@@ -3,6 +3,7 @@ import axios from "axios";
 import {computed, ref} from "vue";
 import {useCounterStore} from "@/stores/counter";
 import {useCommonStore} from "@/stores/common";
+import SimpleChart from "@/components/simpleChart.vue";
 
 
 const nameStore = useCommonStore();
@@ -23,7 +24,7 @@ const run = () => {
 </script>
 
 <template>
-  <main class="bg-green-400">
+  <main>
     <h1>Hello from Home Page</h1>
     <p>Input : </p> <input type="text" name="ff" id="ff">
     <!--    <button class="btn-blue" @click="test">Click Me</button>-->
@@ -39,5 +40,6 @@ const run = () => {
     <button class="btn-blue" @click="run">Run Function</button>
     <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
+    <simple-chart class="w-2/4" />
   </main>
 </template>
