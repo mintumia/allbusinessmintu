@@ -916,25 +916,25 @@ select {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.absolute {
-  position: absolute;
+.h-\[100px\] {
+  height: 100px;
 }
 
-.relative {
-  position: relative;
+.h-\[150px\] {
+  height: 150px;
 }
 
-.flex {
-  display: flex;
+.w-\[200px\] {
+  width: 200px;
 }
 
-.border {
-  border-width: 1px;
+.w-\[80px\] {
+  width: 80px;
 }
 
-.bg-green-400 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 [x-cloak] {
