@@ -5,6 +5,7 @@ import {useCounterStore} from "@/stores/counter";
 import {useCommonStore} from "@/stores/common";
 import SimpleChart from "@/components/simpleChart.vue";
 import SimpleSlideTest from "@/components/simpleSlideTest.vue";
+import FormValidate from "@/components/FormValidate.vue";
 
 
 const nameStore = useCommonStore();
@@ -41,6 +42,6 @@ const run = () => {
     <button class="btn-blue" @click="run">Run Function</button>
     <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
-<simple-slide-test/>
+<form-validate/>
   </main>
 </template>
