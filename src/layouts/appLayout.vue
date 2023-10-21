@@ -3,6 +3,8 @@ import { RouterView } from 'vue-router';
 import FooterItems from "@/components/footerItems.vue";
 import HeaderItems from "@/components/headerItems.vue";
 import NavBar from "@/components/navBar.vue";
+import NewNavBar from "@/components/NewNavBar.vue";
+import NewNavBar02 from "@/components/NewNavBar02.vue";
 /*import PlaceHolderImage from "@/components/images/placeHolderImage.vue";
 import PlaceHolderImage01 from "@/components/images/placeHolderImage01.vue";
 import PlaceHolderImage02 from "@/components/images/placeHolderImage02.vue";*/
@@ -10,7 +12,8 @@ import PlaceHolderImage02 from "@/components/images/placeHolderImage02.vue";*/
 
 <template>
   <div class="mx-auto">
-    <nav-bar/>
+
+    <new-nav-bar02/>
 
     <header-items/>
    <main>
