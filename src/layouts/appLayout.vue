@@ -14,7 +14,10 @@ import PlaceHolderImage02 from "@/components/images/placeHolderImage02.vue";*/
 
     <header-items/>
    <main>
-     <router-view/>
+     <transition>
+       <router-view/>
+     </transition>
+
    </main>
 
     <footer-items/>
@@ -23,13 +26,17 @@ import PlaceHolderImage02 from "@/components/images/placeHolderImage02.vue";*/
 </template>
 
 <style>
-/*.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
+.v-enter-active,
+.v-leave-active {
+  //transition: opacity 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
 }
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(2rem);
-}*/
+
+.v-enter-from,
+.v-leave-to {
+  filter: blur(1rem);
+}
+
+
 </style>
