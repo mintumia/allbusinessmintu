@@ -38,12 +38,13 @@ const run = () => {
     <!--<h1>from Net : {{nameStore.setFromNet()}}</h1>-->
 
 
-    <button class="btn btn-primary" @click="store.increment">Increment</button>
-    <button class="btn btn-warning" @click="store.multipyDouble()">Double</button>
-    <button class="btn btn-success" @click="run">Run Function</button>
-    <button class="btn test" @click="nameStore.setFromNet()">Get Name</button>
+    <button class="btn-blue" @click="store.increment">Increment</button>
+    <button class="btn-blue" @click="store.multipyDouble()">Double</button>
+    <button class="btn-blue" @click="run">Run Function</button>
+    <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
 <form-validate/>
-    <bootstrap-test/>
+
+
   </main>
 </template>

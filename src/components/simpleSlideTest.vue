@@ -6,6 +6,7 @@
       navigation
       :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"
+
       @swiper="onSwiper"
       @slideChange="onSlideChange"
   >
@@ -39,6 +40,11 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+  },
+  data(){
+    return{
+
+    }
   },
   setup() {
     //const path = router.hasRoute("/");

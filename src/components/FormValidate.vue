@@ -15,10 +15,10 @@ function onSubmit(values) {
 
 <template>
   <Form v-slot="{ errors }" @submit="onSubmit">
-    <Field name="field" :rules="required" />
+    <Field type="text" name="field" :rules="required" />
 
     <span class="text-red-500">{{ errors.field }}</span>
 
-    <button>Submit</button>
+    <button class="btn-blue">Submit</button>
   </Form>
 </template>
