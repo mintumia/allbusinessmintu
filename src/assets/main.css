@@ -999,6 +999,10 @@ select {
   border-width: 0;
 }
 
+.\!collapse {
+  visibility: collapse !important;
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -1261,6 +1265,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .p-2 {
