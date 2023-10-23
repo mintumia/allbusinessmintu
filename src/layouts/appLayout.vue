@@ -7,6 +7,7 @@ import NavBar from "@/components/navBar.vue";
 import NewNavBar from "@/components/NewNavBar.vue";
 import NewNavBar02 from "@/components/NewNavBar02.vue";
 import Testing from "@/components/testing.vue";
+import SearchBar from "@/components/SearchBar.vue";
 /*import PlaceHolderImage from "@/components/images/placeHolderImage.vue";
 import PlaceHolderImage01 from "@/components/images/placeHolderImage01.vue";
 import PlaceHolderImage02 from "@/components/images/placeHolderImage02.vue";*/
@@ -18,6 +19,7 @@ const testing = ref(null);
   <div class="mx-auto">
 
     <new-nav-bar02/>
+    <search-bar/>
 
     <header-items/>
    <main>

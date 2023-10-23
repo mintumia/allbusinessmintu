@@ -1,12 +1,15 @@
 <script setup>
-import axios from "axios";
+//import axios from "axios";
 import {computed, ref} from "vue";
 import {useCounterStore} from "@/stores/counter";
 import {useCommonStore} from "@/stores/common";
-import SimpleChart from "@/components/simpleChart.vue";
-import SimpleSlideTest from "@/components/simpleSlideTest.vue";
+//import SimpleChart from "@/components/simpleChart.vue";
+
 import FormValidate from "@/components/FormValidate.vue";
-import BootstrapTest from "@/components/bootstrapTest.vue";
+import SimpleSlideTest from "@/components/simpleSlideTest.vue";
+import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
+
+
 
 
 const nameStore = useCommonStore();
@@ -28,6 +31,10 @@ const run = () => {
 
 <template>
   <main>
+    <simple-slide-test/>
+    <auto-play-slide/>
+
+
     <h1>Hello from Home Page</h1>
     <p>Input : </p> <input type="text" name="ff" id="ff">
     <!--    <button class="btn-blue" @click="test">Click Me</button>-->

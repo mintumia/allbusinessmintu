@@ -30,8 +30,8 @@ export default {
 
 
         <li>
-          <router-link to="/"><span class="flex items-center"><icon icon="material-symbols:other-houses-rounded"
-                                                                    class="mx-1"/>HOME</span></router-link>
+          <router-link to="/"><span class="flex items-center"><icon icon="material-symbols:other-houses-rounded" class="mx-1"/>
+                                                                    HOME</span></router-link>
         </li>
         <li class="hover:underline mx-2">
           <router-link to="/about"><span class="flex items-center"><icon icon="material-symbols:info" class="mx-1"/>ABOUT</span>
