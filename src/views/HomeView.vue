@@ -8,6 +8,7 @@ import {useCommonStore} from "@/stores/common";
 import FormValidate from "@/components/FormValidate.vue";
 import SimpleSlideTest from "@/components/simpleSlideTest.vue";
 import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
+import OfferCard from "@/components/OfferCard.vue";
 
 
 
@@ -31,8 +32,8 @@ const run = () => {
 
 <template>
   <main>
-    <simple-slide-test/>
     <auto-play-slide/>
+    <offer-card/>
 
 
     <h1>Hello from Home Page</h1>

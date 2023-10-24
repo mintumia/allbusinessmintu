@@ -1,6 +1,7 @@
 <template>
 <swiper
     :spaceBetween="30"
+    :slides-per-view="2"
     :centeredSlides="true"
     :autoplay="{
       delay: 4000,
@@ -13,13 +14,22 @@
     :modules="modules"
     class="mySwiper"
 >
-  <swiper-slide ><div class="w-20 h-40 text-center" >01<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >02<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >03<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >04<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >05<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >06<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-20 h-40 text-center" >07<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >01<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >02<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >03<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >04<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >05<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >06<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >07<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >08<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >09<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >10<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >11<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >12<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >13<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><div class="w-fit h-fit text-center" >14<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+
+
 </swiper>
 </template>
 <script>
