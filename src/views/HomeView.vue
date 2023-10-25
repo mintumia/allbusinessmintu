@@ -1,6 +1,7 @@
 <script setup>
 //import axios from "axios";
-import {computed, ref} from "vue";
+import {computed, onMounted, ref} from "vue";
+import {_} from 'lodash';
 import {useCounterStore} from "@/stores/counter";
 import {useCommonStore} from "@/stores/common";
 //import SimpleChart from "@/components/simpleChart.vue";
@@ -11,14 +12,29 @@ import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
 import OfferCard from "@/components/OfferCard.vue";
 
 
-
+const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
 
 const nameStore = useCommonStore();
 const store = useCounterStore();
 const data = ref(store.count);
 //const increment =()=>{store.increment() };
 const newdata = ref(0);
+const arr = [
+  {Id:1, name:"Michael"},
+  {Id:2, name:"Mix"},
+  {Id:3, name:"Mark"},
+  {Id:4, name:"Marta"},
+  {Id:5, name:"Anna"}
+];
+let desiredId = 3;
 
+onMounted(()=>{
+
+  let result = _.find(arr, { Id: desiredId });
+
+  console.log(result);
+
+});
 const run = () => {
   setTimeout(() => {
     newdata.value = store.count + 3;
@@ -27,6 +43,7 @@ const run = () => {
 
   }, 4000);
 };
+
 
 </script>
 
