@@ -10,6 +10,7 @@ import FormValidate from "@/components/FormValidate.vue";
 import SimpleSlideTest from "@/components/simpleSlideTest.vue";
 import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
 import OfferCard from "@/components/OfferCard.vue";
+import PostCard from "@/components/PostCard.vue";
 
 
 const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
@@ -19,22 +20,8 @@ const store = useCounterStore();
 const data = ref(store.count);
 //const increment =()=>{store.increment() };
 const newdata = ref(0);
-const arr = [
-  {Id:1, name:"Michael"},
-  {Id:2, name:"Mix"},
-  {Id:3, name:"Mark"},
-  {Id:4, name:"Marta"},
-  {Id:5, name:"Anna"}
-];
-let desiredId = 3;
 
-onMounted(()=>{
 
-  let result = _.find(arr, { Id: desiredId });
-
-  console.log(result);
-
-});
 const run = () => {
   setTimeout(() => {
     newdata.value = store.count + 3;
@@ -48,7 +35,7 @@ const run = () => {
 </script>
 
 <template>
-  <main>
+  <main class="container mx-auto">
     <auto-play-slide/>
     <offer-card/>
 
@@ -69,6 +56,8 @@ const run = () => {
     <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
 <form-validate/>
+
+<simple-slide-test/>
 
 
   </main>

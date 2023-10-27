@@ -2,7 +2,7 @@
   <swiper
       :modules="modules"
       :slides-per-view="3"
-      :space-between="50"
+      :space-between="10"
       navigation
       :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"
@@ -10,13 +10,16 @@
       @swiper="onSwiper"
       @slideChange="onSlideChange"
   >
-    <swiper-slide ><div class="w-20 h-40 text-center" >01<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
+<!--    <swiper-slide ><div class="w-20 h-40 text-center" >01<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
     <swiper-slide ><div class="w-20 h-40 text-center" >02<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
     <swiper-slide ><div class="w-20 h-40 text-center" >03<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
     <swiper-slide ><div class="w-20 h-40 text-center" >04<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
     <swiper-slide ><div class="w-20 h-40 text-center" >05<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-    <swiper-slide ><div class="w-20 h-40 text-center" >06<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
-    <swiper-slide ><div class="w-20 h-40 text-center" >07<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>
+    <swiper-slide ><div class="w-20 h-40 text-center" >06<img  src="../assets/images/cloth.png" alt="cloth"></div></swiper-slide>-->
+<!--    <swiper-slide ><post-card link="./about" postTitle="Testing Post" imagePath="/src/assets/images/cloth.png" description="The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs." /></swiper-slide>-->
+
+
+<swiper-slide><post-card postTitle="Testing Post" imagePath="/src/assets/images/cloth.png" description="The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs.The quick brown fox jump over the lazy dogs." /> </swiper-slide>
 
   </swiper>
 <!--  <div><h1>{{$route.href}}</h1></div>-->
@@ -34,10 +37,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import router from "@/router";
+import PostCard from "@/components/PostCard.vue";
+import NewPostCard from "@/components/PostCard.vue";
 
 // Import Swiper styles
 export default {
   components: {
+    NewPostCard,
+    PostCard,
     Swiper,
     SwiperSlide,
   },

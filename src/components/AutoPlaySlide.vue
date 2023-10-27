@@ -30,6 +30,7 @@
   <swiper-slide ><div class="w-fit h-fit text-center" >14<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
 
 
+
 </swiper>
 </template>
 <script>
@@ -46,9 +47,11 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import OfferCard from "@/components/OfferCard.vue";
 
 export default {
   components: {
+    OfferCard,
     Swiper,
     SwiperSlide,
   },
