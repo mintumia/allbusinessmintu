@@ -11,6 +11,7 @@ import SimpleSlideTest from "@/components/simpleSlideTest.vue";
 import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
 import OfferCard from "@/components/OfferCard.vue";
 import PostCard from "@/components/PostCard.vue";
+import SectionHeadingTitle from "@/components/SectionHeadingTitle.vue";
 
 
 const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
@@ -37,6 +38,10 @@ const run = () => {
 <template>
   <main class="container mx-auto">
     <auto-play-slide/>
+    <br/>
+<section-heading-title title="Product Catagory"/>
+    <br/>
+    <simple-slide-test/>
     <offer-card/>
 
 
@@ -57,7 +62,7 @@ const run = () => {
 
 <form-validate/>
 
-<simple-slide-test/>
+
 
 
   </main>

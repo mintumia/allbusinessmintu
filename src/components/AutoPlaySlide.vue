@@ -14,43 +14,37 @@
     :modules="modules"
     class="mySwiper"
 >
-  <swiper-slide ><div class="w-fit h-fit text-center" >01<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >02<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >03<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >04<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >05<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >06<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >07<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >08<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >09<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >10<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >11<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >12<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >13<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
-  <swiper-slide ><div class="w-fit h-fit text-center" >14<img  src="../assets/images/Test.webp" alt="cloth"></div></swiper-slide>
+  <swiper-slide ><large-slide-card/></swiper-slide>
+  <swiper-slide ><large-slide-card/></swiper-slide>
+  <swiper-slide ><large-slide-card/></swiper-slide>
+  <swiper-slide ><large-slide-card/></swiper-slide>
+  <swiper-slide ><large-slide-card/></swiper-slide>
+  <swiper-slide ><large-slide-card01/></swiper-slide>
+  <swiper-slide ><large-slide-card01/></swiper-slide>
+  <swiper-slide ><large-slide-card01/></swiper-slide>
+  <swiper-slide ><large-slide-card01/></swiper-slide>
+  <swiper-slide ><large-slide-card01/></swiper-slide>
+
+
 
 
 
 </swiper>
 </template>
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
 import 'swiper/css';
-
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-//import './style.css';
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import OfferCard from "@/components/OfferCard.vue";
+import LargeSlideCard from "@/components/LargeSlideCard.vue";
+import LargeSlideCard01 from "@/components/LargeSlideCard01.vue";
 
 export default {
   components: {
+    LargeSlideCard01,
+    LargeSlideCard,
     OfferCard,
     Swiper,
     SwiperSlide,
