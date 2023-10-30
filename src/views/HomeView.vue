@@ -12,9 +12,11 @@ import AutoPlaySlide from "@/components/AutoPlaySlide.vue";
 import OfferCard from "@/components/OfferCard.vue";
 import PostCard from "@/components/PostCard.vue";
 import SectionHeadingTitle from "@/components/SectionHeadingTitle.vue";
+import ProductCard from "@/components/ProductCard.vue";
+import StarReviews from "@/components/StarReviews.vue";
 
 
-const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
+//const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
 
 const nameStore = useCommonStore();
 const store = useCounterStore();
@@ -42,6 +44,14 @@ const run = () => {
 <section-heading-title title="Product Catagory"/>
     <br/>
     <simple-slide-test/>
+<!--    product List items-->
+    <section-heading-title title="Product List"/>
+    <star-reviews :ratings=4.3 />
+    <product-card :price=100 :ratings=6 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+
+    <section-heading-title title="New Offers"/>
     <offer-card/>
 
 
