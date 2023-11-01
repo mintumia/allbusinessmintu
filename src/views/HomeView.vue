@@ -46,10 +46,23 @@ const run = () => {
     <simple-slide-test/>
 <!--    product List items-->
     <section-heading-title title="Product List"/>
-    <star-reviews :ratings=4.3 />
-    <product-card :price=100 :ratings=6 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
-    <product-card postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
-    <product-card postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+
+  <div class="grid grid-cols-1 gap-1 sm:grid-rows-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full">
+    <product-card :price=100 :ratings=3.2 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=3.5 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=4.7 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=5 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=1 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=1.2 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=1.5 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=1.7 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=0.2 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+    <product-card :price=100 :ratings=0.6 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
+
+
+
+
+  </div>
 
     <section-heading-title title="New Offers"/>
     <offer-card/>
