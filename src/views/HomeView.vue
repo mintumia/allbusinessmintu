@@ -14,6 +14,7 @@ import PostCard from "@/components/PostCard.vue";
 import SectionHeadingTitle from "@/components/SectionHeadingTitle.vue";
 import ProductCard from "@/components/ProductCard.vue";
 import StarReviews from "@/components/StarReviews.vue";
+import DealOftheWeek from "@/components/DealOftheWeek.vue";
 
 
 //const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
@@ -66,8 +67,8 @@ const run = () => {
 
     <section-heading-title title="New Offers"/>
     <offer-card/>
-
-
+    <section-heading-title title="Deal Of the Week"/>
+<deal-ofthe-week :count-down="2023-10-2" />
     <h1>Hello from Home Page</h1>
     <p>Input : </p> <input type="text" name="ff" id="ff">
     <!--    <button class="btn-blue" @click="test">Click Me</button>-->
