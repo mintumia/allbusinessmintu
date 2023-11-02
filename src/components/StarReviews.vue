@@ -1,5 +1,5 @@
 <script setup>
-import {ref, defineProps, watchEffect, onMounted} from 'vue';
+import {ref, watchEffect, onMounted} from 'vue';
 import {Icon} from '@iconify/vue';
 
 const stars = ref([]);
@@ -14,6 +14,7 @@ onMounted(()=>{
   ratingsImage(myProps.ratings);
 
 });
+
 
 /*setTimeout(() => {
   watchEffect(() => {
