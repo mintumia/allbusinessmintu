@@ -67,8 +67,17 @@ const run = () => {
 
     <section-heading-title title="New Offers"/>
     <offer-card/>
+
+<!--    Deal of the week-->
     <section-heading-title title="Deal Of the Week"/>
-<deal-ofthe-week :count-down="2023-10-2" />
+<deal-ofthe-week
+    image-path-r="/src/assets/images/Test.webp"
+    image-path-l="/src/assets/images/Test.webp"
+    countDown="2033-02-05"
+
+/>
+
+
     <h1>Hello from Home Page</h1>
     <p>Input : </p> <input type="text" name="ff" id="ff">
     <!--    <button class="btn-blue" @click="test">Click Me</button>-->
