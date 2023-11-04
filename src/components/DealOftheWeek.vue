@@ -1,49 +1,81 @@
 <script setup>
-import {ref, reactive} from 'vue';
+import {ref, reactive, watchEffect, watchPostEffect, computed} from 'vue';
 
-
-
+const distance = ref(0);
 const counter = reactive({
 
-  year:0,
-      month:0,
-    day:0,
-    hour:0,
-    minute:0,
-    second:0,
+  year: 0,
+  month: 0,
+  day: 0,
+  hour: 0,
+  minute: 0,
+  second: 0,
 
 });
 
 //const imagePath = ref("");
 const myProps = defineProps({
-  imagePathR:String,
-  imagePathL:String,
-  countDown:String,
+  imagePathR: String,
+  imagePathL: String,
+  countDown: String,
 });
 
-setTimeout(() => {
+/*watchPostEffect(()=>{
+  timeCounter();
+});*/
+
+/*
+computed(()=>{
+
+  setTimeout(() => {
+    timeCounter();
+
+  }, 3000);
+});
+*/
+watchEffect( ()=> {
+distance.value = new Date(myProps.countDown)-new Date();
+
+    timeCounter();
+
+
+});
+
+/*setTimeout(()=>{
+  watchEffect(async ()=> {
+
+    await timeCounter();
+  })
+
+},1000);*/
+
+/*setTimeout(() => {
   timeCounter();
 
-}, 3000);
+}, 3000);*/
+
+/*computed(()=>{
+  //distance.value = new Date(myProps.countDown)-new Date();
+});*/
 
 
 function timeCounter() {
-  const now = new Date();
-const current = new Date(myProps.countDown);
+ // const now = new Date();
 
-/*counter.year = Math.floor(current/(1000*60*60*24*30*12));
-  counter.month = Math.floor(((current/(1000*60*60*24*30*12))-counter.year)*12);
-  counter.day = Math.floor((((current/(1000*60*60*24*30*12))-counter.year)-counter.month)*30);
-  counter.hour = Math.floor(((((current/(1000*60*60*24*30*12))-counter.year)*12)*30)*24);
-  counter.minute = Math.floor(((((current/(1000*60*60*24*30*12))-counter.year)*12)*30)*60);
-  counter.second = Math.floor((((((current/(1000*60*60*24*30*12))-counter.year)*12)*30)*60)*60);*/
+if( distance.value>0){
+  counter.year = Math.floor( distance.value/(1000*60*60*24*30*12));
+  counter.month = Math.floor((( distance.value/(1000*60*60*24*30*12))-counter.year)*12);
+  counter.day = Math.floor(( distance.value/((1000*60*60*24*30*12)-counter.year)-counter.month)*30);
+  counter.hour = Math.floor(((( distance.value/((1000*60*60*24*30*12)-counter.year)-counter.month)*30)-counter.day)*24);
+  counter.minute = Math.floor(((((( distance.value/((1000*60*60*24*30*12)-counter.year)-counter.month)*30)-counter.day)*24)-counter.hour)*60);
+  counter.second = Math.floor(((((((( distance.value/((1000*60*60*24*30*12)-counter.year)-counter.month)*30)-counter.day)*24)-counter.hour)*60)-counter.minute)*60);
+
+}
 
 
 
-counter.year = current.getFullYear()-now.getFullYear();
-counter.month =current.getMonth()-now.getMonth()
 
-  console.log(counter);
+ // console.log(counter);
 
 
 }
@@ -55,10 +87,18 @@ counter.month =current.getMonth()-now.getMonth()
       <div class="basis-1/3">
         <img :src="imagePathR" alt="Deal of the week">
       </div>
-      <div>
-<h1 class="basis-1/3 text-2xl text-center font-semibold rounded rounded-xl">
-Hello Offer
-</h1>
+      <div class="basis-1/3 rounded rounded-xl p-3">
+        <h1 class="text-2xl text-center font-semibold ">
+          Hello Offer
+        </h1>
+        <h1 class="text-xl font-semibold text-center">
+          Year : {{counter.year}},
+          Month : {{counter.month}},
+          Day : {{counter.day}},
+          Hour : {{counter.hour}},
+          Minute : {{counter.minute}},
+          Second : {{counter.second}},
+        </h1>
       </div>
       <div class="basis-1/3"><img :src="imagePathL" alt="Deal of the week"></div>
     </div>

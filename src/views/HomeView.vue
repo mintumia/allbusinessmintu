@@ -73,7 +73,7 @@ const run = () => {
 <deal-ofthe-week
     image-path-r="/src/assets/images/Test.webp"
     image-path-l="/src/assets/images/Test.webp"
-    countDown="2033-02-05"
+    countDown="2024-12-09"
 
 />
 
