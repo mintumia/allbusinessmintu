@@ -15,6 +15,7 @@ import SectionHeadingTitle from "@/components/SectionHeadingTitle.vue";
 import ProductCard from "@/components/ProductCard.vue";
 import StarReviews from "@/components/StarReviews.vue";
 import DealOftheWeek from "@/components/DealOftheWeek.vue";
+import PdfTest from "@/components/PdfTest.vue";
 
 
 //const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
@@ -48,7 +49,7 @@ const run = () => {
 <!--    product List items-->
     <section-heading-title title="Product List"/>
 
-  <div class="grid grid-cols-1 gap-1 sm:grid-rows-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-1 w-full">
     <product-card :price=100 :ratings=3.2 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
     <product-card :price=100 :ratings=3.5 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
     <product-card :price=100 :ratings=4.7 postTitle="Apple" description="The quick brown fox jump over the lazy dogs." imagePath="/src/assets/images/Test.webp"/>
@@ -94,6 +95,8 @@ const run = () => {
     <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
 <form-validate/>
+
+    <pdf-test/>
 
 
 
