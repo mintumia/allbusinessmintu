@@ -67,22 +67,36 @@ function timeCounter() {
 
 <template>
   <div>
-    <div class="flex flex-row justify-between items-center bg-pink-200">
+    <div class="flex flex-row justify-between items-center">
       <div class="basis-1/3">
         <img :src="imagePathR" alt="Deal of the week">
       </div>
       <div class="basis-1/3 rounded-xl p-3">
-        <h1 class="text-2xl text-center font-semibold ">
-          Hello Offer
-        </h1>
-        <h1 class="text-xl font-semibold text-center">
-          Year : {{ counter.year }},
-          Month : {{ counter.month }},
-          Day : {{ counter.day }},
-          Hour : {{ counter.hour }},
-          Minute : {{ counter.minute }},
-          Second : {{ counter.second }},
-        </h1>
+        <div class="items-center content-center justify-between mx-auto">
+          <div class="content-center min-h-[80px]">
+            <h1 class="text-2xl text-center font-semibold ">
+              Hello Offer
+            </h1>
+          </div>
+          <hr/>
+
+
+          <table class="text-center mx-auto w-full">
+            <tr class="p-2 bg-blue-100"><th>Year</th><th>Month</th><th>Day</th></tr>
+            <tr class="sm:text-2xl lg:text-5xl font-semibold ">
+              <td>{{ counter.year }}</td>
+              <td>{{ counter.month }}</td>
+              <td>{{ counter.day }}</td>
+            </tr>
+            <tr class="p-2 bg-blue-50"><th>Hours</th><th>Minutes</th><th>Seconds</th></tr>
+            <tr class="sm:text-2xl lg:text-5xl font-semibold p-2">
+              <td>{{ counter.hour }}</td>
+              <td>{{ counter.minute }}</td>
+              <td>{{ counter.second }}</td>
+            </tr>
+          </table>
+        </div>
+
       </div>
       <div class="basis-1/3"><img :src="imagePathL" alt="Deal of the week"></div>
     </div>
