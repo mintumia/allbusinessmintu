@@ -16,6 +16,7 @@ import ProductCard from "@/components/ProductCard.vue";
 import StarReviews from "@/components/StarReviews.vue";
 import DealOftheWeek from "@/components/DealOftheWeek.vue";
 import PdfTest from "@/components/PdfTest.vue";
+import MyRand from "@/components/MyRand.vue";
 
 
 //const fruits = ref(["apple","Mango","Banana","papaya","Orange","Avokado"]);
@@ -72,8 +73,8 @@ const run = () => {
 <!--    Deal of the week-->
     <section-heading-title title="Deal Of the Week"/>
 <deal-ofthe-week
-    image-path-r="/src/assets/images/Test.webp"
-    image-path-l="/src/assets/images/Test.webp"
+    image-path-r="../assets/images/Test.webp"
+    image-path-l="../assets/images/Test.webp"
     countDown="2023-12-09"
 
 />
@@ -94,9 +95,9 @@ const run = () => {
     <button class="btn-blue" @click="run">Run Function</button>
     <button class="btn-blue" @click="nameStore.setFromNet()">Get Name</button>
 
-<form-validate/>
+<!--<form-validate/>
 
-    <pdf-test/>
+    <pdf-test/>-->
 
 
 
