@@ -5,6 +5,7 @@ import axios from "axios";
 
 export const useCommonStore = defineStore('common', () => {
 
+    const serverName =ref("localhost");
     const firstName = ref("");
     const lastName = ref("");
 
@@ -30,6 +31,6 @@ export const useCommonStore = defineStore('common', () => {
     }
 
     return {
-        firstName, lastName, fullName, setName,setFromNet
+      serverName,firstName, lastName, fullName, setName,setFromNet
     }
 })
