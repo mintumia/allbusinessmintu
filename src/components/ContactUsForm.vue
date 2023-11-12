@@ -1,7 +1,22 @@
 <script setup>
 import {ref} from "vue";
-import {Field,validate} from "vee-validate";
+import {useForm} from "vee-validate";
+import * as yup from 'yup';
 
+
+
+const schema = yup.object({
+  email:yup.string().required().email().max(50).min(6),
+  fName:yup.string().required().min(3).max(80),
+  message:yup.string().required().min(3).max(2000),
+});
+const {values,errors,defineInputBinds} = useForm({
+  validationSchema:schema,
+
+    });
+const fName = defineInputBinds("fName",{validateOnInput:true,});
+const email = defineInputBinds("email",{validateOnInput:true,});
+const message = defineInputBinds("message",{validateOnInput:true,});
 
 const contactForm = ref({
   fName:"",
@@ -16,9 +31,9 @@ function onSubmit() {
 
 function formHandler(){
 
-  console.log("Name : "+contactForm.value.fName);
+  /*console.log("Name : "+contactForm.value.fName);
   console.log("Email : "+contactForm.value.email);
-  console.log("Name : "+contactForm.value.message);
+  console.log("Name : "+contactForm.value.message);*/
 
 }
 
@@ -38,15 +53,19 @@ function formHandler(){
 
         <div>
           <label for="full_name">Full Name :</label>
-          <input  v-model.lazy="contactForm.fName" type="text" name="full_name" id="full_name" />
+          <input type="text" v-bind="fName" name="full_name" id="full_name" />
+          <p class="bg-red-600 text-white m-2 p-2" v-if="errors.fName">{{errors.fName}}</p>
         </div>
         <div>
           <label for="email">Email :</label>
-          <input type="email" v-model.lazy="contactForm.email" name="email" id="email">
+          <input type="email" v-bind="email" name="email" id="email">
+          <p class="bg-red-600 text-white m-2 p-2" v-if="errors.email">{{errors.email}}</p>
         </div>
         <div>
           <label for="message">Message :</label>
-          <textarea v-model.lazy="contactForm.message" name="message" id="message" cols="50" rows="3"></textarea>
+          <p class="bg-red-600 text-white m-2 p-2" v-if="errors.message" >{{errors.message}}</p>
+          <textarea  name="message" id="message" cols="50" rows="3" v-bind="message"></textarea>
+
         </div>
         <div>
           <button type="submit">Send Message</button>
@@ -61,9 +80,9 @@ function formHandler(){
 
   </div>
   <div>
-  <h1>name : {{contactForm.fName}}</h1>
-  <h1>Email : {{contactForm.email}}</h1>
-  <h1>Message : {{contactForm.message}}</h1>
+  <h1>{{ values }}</h1>
+<!--  <h1>Email : {{contactForm.email}}</h1>
+  <h1>Message : {{contactForm.message}}</h1>-->
 </div>
 </div>
 </template>
