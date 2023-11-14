@@ -5,6 +5,7 @@ import axios from "axios";
 
 export const useCommonStore = defineStore('common', () => {
 
+    const companyName = ref('AllBusiness E-commerce');
     const serverName =ref("localhost");
     const firstName = ref("");
     const lastName = ref("");
@@ -31,6 +32,7 @@ export const useCommonStore = defineStore('common', () => {
     }
 
     return {
-      serverName,firstName, lastName, fullName, setName,setFromNet
+        
+        companyName, serverName, firstName, lastName, fullName, setName,setFromNet
     }
 })

@@ -51,6 +51,10 @@
         @apply bg-blue-500 text-white rounded-lg font-semibold shadow-md shadow-black cursor-pointer p-1 mx-auto;
     }
 
+    .child-m-3 > * {
+      @apply m-3 ;
+    }
+
     /*.drop-down {*/
     /*    @apply relative inline-block;*/
     /*}*/
