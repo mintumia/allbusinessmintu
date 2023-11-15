@@ -130,12 +130,24 @@ computed(()=>{
             </li>
             <li  class="block py-2 pl-3 pr-4 sm:border-b-2 sm:border-gray-400 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                  aria-current="page">
+              <router-link to="/testcanvas">
+                <div class="flex items-center">
+                  <span> <icon icon="fa-address-book" class="mx-1"/></span>
+                  <span class="self-center">Canvas Page</span>
+                </div>
+              </router-link>
+
+            </li>
+
+            <li  class="block py-2 pl-3 pr-4 sm:border-b-2 sm:border-gray-400 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                 aria-current="page">
               <router-link to="/login">
                 <div class="flex items-center">
                   <span> <icon icon="bi:person-fill-lock" class="mx-1"/></span>
                   <span class="self-center">Login</span>
                 </div>
               </router-link>
+
             </li>
 
           </ul>

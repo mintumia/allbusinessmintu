@@ -1,6 +1,7 @@
 import {ref, computed, onMounted} from "vue";
 import {defineStore} from "pinia";
 import axios from "axios";
+import {property} from "lodash/util";
 
 
 export const useCommonStore = defineStore('common', () => {
@@ -23,8 +24,9 @@ onMounted(()=>{
 
     setTimeout(()=>{
         //console.log(self.name.toString());
-       console.log(serverName.value);
+       //console.log(serverName.value);
 
+//console.log(self.va);
 
     },3000)
 });

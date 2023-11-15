@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import about from '../views/about.vue';
 import contactUs from '../views/contactUs.vue';
 import LoginPage from "@/views/LoginPage.vue";
+import testcanvas from '@/views/TestCanvas.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: contactUs
+    },
+    {
+      path:'/testcanvas',
+      name:'testcanvas',
+      component:testcanvas
     },
     {
       path: '/login',
