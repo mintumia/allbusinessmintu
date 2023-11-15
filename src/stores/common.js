@@ -1,4 +1,4 @@
-import {ref, computed} from "vue";
+import {ref, computed, onMounted} from "vue";
 import {defineStore} from "pinia";
 import axios from "axios";
 
@@ -6,7 +6,7 @@ import axios from "axios";
 export const useCommonStore = defineStore('common', () => {
 
     const companyName = ref('AllBusiness E-commerce');
-    const serverName =ref("localhost");
+    const serverName =ref(window.location.origin);
     const firstName = ref("");
     const lastName = ref("");
 
@@ -19,6 +19,15 @@ export const useCommonStore = defineStore('common', () => {
         firstName.value = _firstName;
         lastName.value = _lastName;
     }
+onMounted(()=>{
+
+    setTimeout(()=>{
+        //console.log(self.name.toString());
+       console.log(serverName.value);
+
+
+    },3000)
+});
 
     async function setFromNet() {
 
@@ -32,6 +41,7 @@ export const useCommonStore = defineStore('common', () => {
     }
 
     return {
+
         
         companyName, serverName, firstName, lastName, fullName, setName,setFromNet
     }

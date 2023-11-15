@@ -59,7 +59,7 @@ function formHandler(){
   <div class="flex flex-col md:flex-row items-center content-center p-3">
 
     <div class="md:basis-1/2 mx-3 my-6 p-3">
-      <img src="../assets/images/Test.webp" alt="Contact Us Image">
+      <img src="/src/assets/images/test.webp" alt="Contact Us Image">
     </div>
 
     <div class="md:basis-1/2 mx-3 my-6 p-3">

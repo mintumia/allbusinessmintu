@@ -32,17 +32,17 @@ async function generatePdf() {
   <div>
     <div ref="test" id="test10" class="p-3 max-w-[600px]">
       <h1 class="text-center font-semibold m-2">Test PDF File</h1>
-      <div class="text-center m-1"><img src="/src/assets/images/Test.webp" alt="image"></div>
+      <div class="text-center m-1"><img src="/src/assets/images/test.webp" alt="image"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <a class="btn-blue mx-auto m-2" href="http://www.google.com">Google</a>
       <h1 class="text-center font-semibold m-2">Test PDF File</h1>
-      <div class="text-center m-1"><img src="/src/assets/images/Test.webp" alt="image"></div>
+      <div class="text-center m-1"><img src="/src/assets/images//test.webp" alt="image"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <a class="btn-blue mx-auto m-2" href="http://www.google.com">Google</a>
       <h1 class="text-center font-semibold m-2">Test PDF File</h1>
-      <div class="text-center m-1"><img src="/src/assets/images/Test.webp" alt="image"></div>
+      <div class="text-center m-1"><img src="/src/assets/images/test.webp" alt="image"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum.</p>
       <a class="btn-blue mx-auto m-2" href="http://www.google.com">Google</a>

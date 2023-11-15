@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup>
 import { Bar } from 'vue-chartjs'
 const chartData = ref({
   labels: ['January', 'February', 'March', 'April', 'May'],

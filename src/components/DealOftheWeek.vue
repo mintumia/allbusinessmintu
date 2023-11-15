@@ -1,6 +1,9 @@
 <script setup>
 import {ref, reactive, watchEffect} from 'vue';
+import {useCommonStore} from '@/stores/common';
 
+
+const mystore = useCommonStore();
 const distance = ref(0);
 const counter = reactive({
 

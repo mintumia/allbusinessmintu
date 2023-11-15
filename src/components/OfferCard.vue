@@ -4,9 +4,9 @@
 
 <template>
   <div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 rounded-2xl p-2 m-2 shadow shadow-xl border-2 border-blue-200 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 rounded-2xl p-2 m-2 shadow-xl border-2 border-blue-200 ">
       <div class="p-2 m-2 text-center">
-        <img src="../assets/images/Test.webp" alt="Hero" srcset="">
+        <img src="/src/assets/images/test.webp" alt="Hero" srcset="">
       </div>
        <div>
          <h1 class="text-2xl font-semibold text-center">New Offer for Customer</h1>

@@ -1,6 +1,8 @@
-<script setup lang="ts">
-import {useTestStore} from "~/store/test";
-const testStore = useTestStore();
+<script setup>
+//import {useTestStore} from '';
+import {useCounterStore} from '@/stores/counter';
+
+const testStore = useCounterStore();
 
 
 </script>

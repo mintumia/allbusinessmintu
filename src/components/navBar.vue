@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import MintuIcon from "./mintuIcon.vue";
 //import CatagoryCard from "./catagoryCard.vue";
 import {Icon} from "@iconify/vue";
@@ -22,7 +22,7 @@ export default {
 
 
       <div class="logo">
-        <img alt="image" src="../assets/images/logo.webp" width="90" height="30">
+        <img alt="image" src="/src/assets/images/logo.webp" width="90" height="30">
       </div>
 
 
